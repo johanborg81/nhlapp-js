@@ -1,0 +1,23 @@
+.sidebar {
+    @include center;
+
+    h2 {
+        text-align: $text-align-center;
+        margin-bottom: $margin-bottom;
+        text-transform: $text-transform-upper;
+        letter-spacing: $letter-spacing;
+    }
+
+    ul.team_output {
+        
+        li {
+            margin-bottom: $margin-bottom;
+        }
+    }
+
+    @media(min-width: $large) {
+        .right_wing {
+            padding-top: $padding-top;
+        }
+    }
+}

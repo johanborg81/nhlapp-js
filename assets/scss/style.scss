@@ -1,0 +1,198 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import 'abstracts/mixins'; 
+@import 'abstracts/variables';
+
+@import 'components/buttons';
+
+@import 'layout/footer';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+
+@import 'pages/index';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: $font-stack;
+    line-height: 1.6;
+    color: $main-font-color;
+}
+
+h2 {
+    font-family: 'Sintony', sans-serif;
+}
+
+p, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: $main-font-color;
+    text-decoration: none;
+    letter-spacing: $letter-spacing;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+.center {
+    @include center;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+/* ====== Sections ====== */ 
+section.random_player {
+    @include paddings-top-bottom;
+    @include center;
+
+    .player_info {
+
+        h2 {
+            margin-bottom: $margin-bottom;
+        }
+
+        li {
+            margin-bottom: $margin-bottom;
+        }
+    }
+}
+
+section.buttons {
+    @include paddings-top-bottom;
+    @include center;
+}
+
+.game_stats {
+    display: none;
+
+    .current_stats {
+        h2 {
+            text-align: center;
+            margin-bottom: $margin-bottom;
+        }
+
+        li {
+            text-align: center;
+            margin-bottom: $margin-bottom;
+        }
+    }
+    
+}
+
+.last_season_stats {
+    display: none;
+
+    .last_season {
+        h2 {
+            margin-bottom: $margin-bottom;
+        }
+        
+        li {
+            text-align: center;
+            margin-bottom: $margin-bottom;
+        }
+    }
+    
+    
+}
+
+.career_stats {
+    display: none;
+
+    .all_career {
+        h2 {
+            margin-bottom: $margin-bottom;
+        }
+
+        li {
+            text-align: center;
+            margin-bottom: $margin-bottom;
+        }
+    }
+}
+
+.team {
+    text-align: center;
+    margin-bottom: $margin-bottom;
+
+    ul.stats {
+        h2 {
+            margin-bottom: $margin-bottom;
+        }
+
+        li {
+            margin-bottom: $margin-bottom;
+        }
+        
+    }
+
+    .current_season_stats {
+        margin-bottom: $margin-bottom;
+    }
+}
+
+.roster {
+    text-align: center;
+    
+    h2 {
+        margin-bottom: $margin-bottom;
+    }
+
+    ul.current_roster li {
+        margin-bottom: $margin-bottom;
+        @include center;
+    }
+}
+
+.current_season_stats {
+    h2, li {
+        margin-bottom: $margin-bottom;
+    }
+}
+
+.previous_year {
+    h2 {
+        margin-bottom: $margin-bottom;
+    }
+
+    li {
+        margin-bottom: $margin-bottom;
+    }
+}
+
+.player_intro {
+    text-align: center;
+
+    h2, li {
+        margin-bottom: $margin-bottom;
+    }
+}
+
+.playoff_stats {
+    text-align: center;
+
+    h2,li {
+        margin-bottom: $margin-bottom;
+    }
+}

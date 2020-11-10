@@ -1,0 +1,25 @@
+.navbar {
+    background-color: $navbar-background-color;
+    margin-bottom: $margin-bottom;
+
+    .navbar_nav {
+        @include paddings-top-bottom;
+        text-align: $text-align-center;
+
+        i {
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #fff;
+        }
+
+        a {
+            color: #fff;
+            font-family: 'Sintony', sans-serif;
+            text-transform: $text-transform-upper;
+
+            &:hover {
+                text-decoration: $text-decoration-under;
+            }
+        }
+    }
+}

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Sintony&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* ====== Mixins ====== */
+/* ====== Variables ====== */
+/* ====== Media Queries ====== */
+/* ====== Border Box ====== */
+/* ====== Navigation ====== */
+/* ====== Buttons ====== */
+/* ====== Footer ====== */
+button {
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover {
+  box-shadow: 5px 5px 8px 1px #888888;
+}
+
+@media (min-width: 1024px) {
+  .buttons form #current_stats, .buttons form #last_season, .buttons form #career_stats, .buttons form #playoff_stats, .buttons form #current_stats, .buttons form #prev_season {
+    width: 150px;
+    display: inline;
+  }
+}
+
+footer {
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #000;
+  margin-bottom: 20px;
+}
+.navbar .navbar_nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.navbar .navbar_nav i {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+}
+.navbar .navbar_nav a {
+  color: #fff;
+  font-family: "Sintony", sans-serif;
+  text-transform: uppercase;
+}
+.navbar .navbar_nav a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sidebar ul.team_output li {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .sidebar .right_wing {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h2 {
+  font-family: "Sintony", sans-serif;
+}
+
+p, a {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center h2 {
+  text-align: center;
+}
+
+/* ====== Sections ====== */
+section.random_player {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.random_player .player_info h2 {
+  margin-bottom: 20px;
+}
+section.random_player .player_info li {
+  margin-bottom: 20px;
+}
+
+section.buttons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_stats {
+  display: none;
+}
+.game_stats .current_stats h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.game_stats .current_stats li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.last_season_stats {
+  display: none;
+}
+.last_season_stats .last_season h2 {
+  margin-bottom: 20px;
+}
+.last_season_stats .last_season li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.career_stats {
+  display: none;
+}
+.career_stats .all_career h2 {
+  margin-bottom: 20px;
+}
+.career_stats .all_career li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.team ul.stats h2 {
+  margin-bottom: 20px;
+}
+.team ul.stats li {
+  margin-bottom: 20px;
+}
+.team .current_season_stats {
+  margin-bottom: 20px;
+}
+
+.roster {
+  text-align: center;
+}
+.roster h2 {
+  margin-bottom: 20px;
+}
+.roster ul.current_roster li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current_season_stats h2, .current_season_stats li {
+  margin-bottom: 20px;
+}
+
+.previous_year h2 {
+  margin-bottom: 20px;
+}
+.previous_year li {
+  margin-bottom: 20px;
+}
+
+.player_intro {
+  text-align: center;
+}
+.player_intro h2, .player_intro li {
+  margin-bottom: 20px;
+}
+
+.playoff_stats {
+  text-align: center;
+}
+.playoff_stats h2, .playoff_stats li {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

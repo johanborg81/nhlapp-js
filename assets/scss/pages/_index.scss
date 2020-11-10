@@ -1,0 +1,9 @@
+.home {
+    @media(min-width: $large) {
+        margin: 0 auto;
+        max-width: 1240px;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+}

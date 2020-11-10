@@ -1,0 +1,11 @@
+/* ====== Mixins ====== */ 
+@mixin paddings-top-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

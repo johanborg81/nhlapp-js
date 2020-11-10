@@ -1,0 +1,34 @@
+button {
+    padding: $padding-top $padding-right $padding-bottom $padding-left;
+    border-radius: $border-radius;
+    border: none;
+    background-color: $btn-bckg-color;
+    color: $btn-font-color;
+    letter-spacing: $letter-spacing;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: $margin-bottom;
+    font-family: 'Poppins', sans-serif;
+    @include center;
+
+    &:hover {
+        box-shadow: $btn-border-box;
+    }
+}
+
+.buttons {
+    form {
+        #current_stats, #last_season, #career_stats, #playoff_stats, #current_stats, #prev_season {
+            @media(min-width: $large) {
+                width: 150px;
+                display: inline;
+            }
+        } 
+    }
+}
+
+// .team_button {
+//     button {
+//         width: 100vw;
+//     }
+// }
