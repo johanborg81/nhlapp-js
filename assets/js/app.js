@@ -640,4 +640,3 @@ if (window.location.href.match('player.html')) {
     player_btn.showCareerStats();
     player_btn.showPlayoffStats();
 }
-
